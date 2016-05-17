@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="50" cy="50.277" r="46.666"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<circle clip-path="url(#SVGID_2_)" fill="#59BA4C" cx="50" cy="50.277" r="46.666"/>
+	<g clip-path="url(#SVGID_2_)">
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M26.683,72.082
+			C32.519,78.309,40.814,82.205,50,82.205c17.626,0,31.966-14.34,31.966-31.965"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M26.683,72.082"/>
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" points="26.683,27.959 26.683,4.787 
+			18.035,4.787 18.035,50.24 		"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M26.683,27.959"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M73.318,50.24
+			c0,12.855-10.461,23.316-23.318,23.316c-12.856,0-23.317-10.461-23.317-23.316"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M26.683,50.24v-0.441
+			c0-12.857,10.461-23.317,23.317-23.317c12.857,0,23.318,10.46,23.318,23.317"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="26.683" y1="72.078" x2="26.683" y2="50.24"/>
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" points="18.035,50.24 18.035,95.766 
+			26.683,95.766 26.683,72.078 		"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M26.68,27.959
+			c-5.358,5.719-8.646,13.404-8.646,21.84v0.441"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" d="M81.967,49.799
+			c0-17.625-14.34-31.965-31.966-31.965c-9.188,0-17.483,3.897-23.32,10.125"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="73.318" y1="49.799" x2="73.318" y2="50.24"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="81.967" y1="49.799" x2="81.967" y2="50.24"/>
+	</g>
+</g>
+</svg>
