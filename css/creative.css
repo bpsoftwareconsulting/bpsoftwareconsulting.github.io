@@ -340,3 +340,8 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
+
+.client-logo {
+  opacity: 80%;
+  max-height: 100px;
+  max-width: 100px; }

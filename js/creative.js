@@ -51,6 +51,11 @@
         scale: 0.3,
         distance: '0px'
     }, 300);
+    sr.reveal('.client', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 300);
 
     // Magnific popup calls
     $('.popup-gallery').magnificPopup({

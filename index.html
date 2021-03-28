@@ -39,15 +39,29 @@
     }
     </style>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43058992-2"></script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
 
-        ga('create', 'UA-43058992-2', 'auto');
-        ga('send', 'pageview');
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied'
+      });
 
+      gtag('js', new Date());
+      gtag('config', 'UA-43058992-2');
+
+      window.onload = (event) => {
+        $('#consentPopup').modal('show');
+      };
+
+      function consentGranted() {
+        return gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+        });
+      }
     </script>
 
     <script type='application/ld+json'>
@@ -94,6 +108,9 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -104,10 +121,10 @@
     <header class="masthead">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Feeling good about making your success.</h1>
+                <h1 id="homeHeading">Solutions for your success.</h1>
                 <hr>
-                <p>BP Software Consulting can help your business unlocking potential and delivering results by giving the best technology direction.</p>
-                <a class="btn btn-primary btn-xl" href="#about" onclick="ga('send', 'event', 'navigation', 'click', 'find-out-more');">Find Out More</a>
+                <p>BP Software Consulting can help your business unlocking potential and delivering results by providing truly digital solutions.</p>
+                <a class="btn btn-primary btn-xl" href="#about" onclick="gtag('event', 'navigation', {'event_category': 'click' ,'event_label': 'find-out-more' });">Find Out More</a>
             </div>
         </div>
     </header>
@@ -116,11 +133,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading text-white">We've got what you need!</h2>
+                    <h2 class="section-heading text-white">Best technology for best results</h2>
                     <hr class="light">
                     <p class="text-faded">BP Software Consulting supplies services your business needs to remove technology as a constraint and deliver results that endure.
                         We help our clients to improve their processes and to provide innovative solutions to move their business forward.</p>
-                    <a class="btn btn-default btn-xl sr-button" href="#services" onclick="ga('send', 'event', 'navigation', 'click', 'get-started');">Get Started!</a>
+                    <a class="btn btn-default btn-xl sr-button" href="#services" onclick="gtag('event', 'navigation', {'event_category': 'click' ,'event_label': 'get-started' });">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -205,6 +222,51 @@
         </div>
     </div>
 
+    <section class="bg-primary" id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2 class="section-heading text-white">Our clients</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 pt-3 text-center align-self-center client">
+                    <a href="https://www.gov.uk" target="_blank">
+                        <img src="img/gov-uk.png" class="img-fluid client-logo" alt="gov.uk">
+                    </a>
+                </div>
+                <div class="col-lg-2 pt-3 text-center align-self-center client">
+                    <a href="https://www.bofaml.com" target="_blank">
+                        <img src="img/bank-of-america.png" class="img-fluid client-logo" alt="Bank Of America">
+                    </a>
+                </div>
+                <div class="col-lg-2 pt-3 text-center align-self-center client">
+                    <a href="https://klarna.com" target="_blank">
+                        <img src="img/klarna.png" class="img-fluid client-logo" alt="Klarna">
+                    </a>
+                </div>
+                <div class="col-lg-2 pt-3 text-center align-self-center client">
+                    <a href="https://11fs.com" target="_blank">
+                        <img src="img/11fs.png" class="img-fluid client-logo" alt="11:FS">
+                    </a>
+                </div>
+                <div class="col-lg-2 pt-3 text-center align-self-center client">
+                    <a href="https://www.sky.com" target="_blank">
+                        <img src="img/sky.png" class="img-fluid client-logo" alt="Sky">
+                    </a>
+                </div>
+                <div class="col-lg-2 pt-3 text-center align-self-center client">
+                    <a href="https://www.heimstadenbostad.com" target="_blank">
+                        <img src="img/heimstaden.png" class="img-fluid client-logo" alt="Heimstaden">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -219,7 +281,7 @@
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-linkedin-square fa-3x sr-contact"></i>
-                    <p><a href="https://linkedin.com/company/bpsoftwareconsulting" target="_blank" onclick="ga('send', 'event', 'navigation', 'click', 'bp-on-linkedin');">bpsoftwareconsulting</a></p>
+                    <p><a href="https://linkedin.com/company/bpsoftwareconsulting" target="_blank" onclick="gtag('event', 'navigation', {'event_category': 'click' ,'event_label': 'bp-on-linkedin' });">bpsoftwareconsulting</a></p>
                 </div>
             </div>
         </div>
@@ -233,6 +295,18 @@
         </div>
     </div>
 
+    <div class="modal fade" id="consentPopup" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="consent" aria-hidden="true">
+        <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>This website uses cookies to analyse traffic in order to offer you a better experience.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="consentGranted();">Accept</button>
+                    <a href="https://cookiesandyou.com/" target="_blank" class="btn btn-secondary">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
@@ -242,6 +316,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
