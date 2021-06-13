@@ -2,12 +2,12 @@
   "title": "BP Software Consulting",
   "name": "bp-software-consulting",
   "description": "BP Software Consulting website",
-  "homepage": "http://www.bpsoftwareconsulting.co.uk",
+  "homepage": "https://www.bpsoftwareconsulting.com",
   "license": "MIT",
   "author": "Paolo Boni",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paoloboni/paoloboni.github.io.git"
+    "url": "https://github.com/bpsoftwareconsulting/bpsoftwareconsulting.github.io.git"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
