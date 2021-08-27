@@ -43,37 +43,12 @@
     }
     </style>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43058992-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'analytics_storage': 'denied'
-      });
-
-      gtag('js', new Date());
-      gtag('config', 'UA-43058992-2');
-
-      window.onload = (event) => {
-        $('#consentPopup').modal('show');
-      };
-
-      function consentGranted() {
-        return gtag('consent', 'update', {
-          'analytics_storage': 'granted'
-        });
-      }
-    </script>
-
     <script type='application/ld+json'>
         {
           "@context": "http://www.schema.org",
           "@type": "Organization",
           "name": "BP Software Consulting Ltd",
-          "url": "http://bpsoftwareconsulting.com",
+          "url": "https://bpsoftwareconsulting.com",
           "description": "Information technology consultancy activities",
           "address": {
             "@type": "PostalAddress",
@@ -84,7 +59,7 @@
             "@type": "ContactPoint",
             "email": "info@bpsoftwareconsulting.com",
             "contactType": "customer service",
-            "url": "http://bpsoftwareconsulting.com"
+            "url": "https://bpsoftwareconsulting.com"
           }]
         }
     </script>
@@ -296,18 +271,6 @@
             <p style="font-size: 10px;">&copy; 2015<script>new Date().getFullYear()>2015&&document.write("-"+new Date().getFullYear());</script>, BP Software Consulting LTD
                 <br>Company number: 09701561
                 <br>Suite One, Second Floor, Everdene House, Bournemouth, BH7 7DU</p>
-        </div>
-    </div>
-
-    <div class="modal fade" id="consentPopup" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="consent" aria-hidden="true">
-        <div class="modal-dialog vertical-align-center" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p>This website uses cookies to analyse traffic in order to offer you a better experience.</p>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="consentGranted();">Accept</button>
-                    <a href="https://cookiesandyou.com/" target="_blank" class="btn btn-secondary">Learn more</a>
-                </div>
-            </div>
         </div>
     </div>
 
